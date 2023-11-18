@@ -1,4 +1,9 @@
+"""
+    In this file the selection of the features is made and the call to the producer function to send data by streaming too.
+"""
+
 import pandas as pd
+
 from services.kafka import kafka_producer
 from sklearn.model_selection import train_test_split 
 

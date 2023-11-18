@@ -1,6 +1,11 @@
+"""
+    all database related operations are performed in this file. 
+"""
+
+import json
 import pandas as pd
 import psycopg2
-import json
+
 
 with open('./db_config.json', 'r') as archivo:
     datos = json.load(archivo)

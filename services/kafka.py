@@ -1,10 +1,15 @@
-from kafka import KafkaProducer, KafkaConsumer
+"""
+    File with the 'producer' and 'consumer' functions to stream data with Kafka
+"""
+import joblib
 import pandas as pd
 import time
-import joblib
-#from confluent_kafka import Producer
+
 from json import dumps, loads
+from kafka import KafkaProducer, KafkaConsumer
+
 from database import insert_data
+
 
 def kafka_producer(X_test):
     producer = KafkaProducer(
