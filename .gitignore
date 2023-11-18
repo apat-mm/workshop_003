@@ -4,3 +4,4 @@ data_happiness.xlsx
 y_test.csv
 model.pkl
 venv
+.ipynb_checkpoints
